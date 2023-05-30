@@ -1,0 +1,279 @@
+*{
+  padding: 0;
+  margin: 0;
+  font-family: poppins;
+  box-sizing: border-box;
+}
+body{
+  background-color: #FBF8CB;
+}
+/* header and nav starts */
+nav{
+  display: flex;
+  gap: 3rem;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 100px;
+}
+.menuu{
+  display: flex;
+
+}
+.tab,a{
+  text-decoration: none;
+  list-style: none;
+}
+nav ul a{
+  color: #04045E;
+}
+.hero nav h4{
+  color: #04045E;
+}
+.tab{
+  display: flex;
+  gap: 2rem;
+}
+.icons{
+  display: flex;
+  gap: 1.5rem;
+}
+.icons i{
+  color: #07045B;
+}
+.content{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px 100px;
+}
+.profile{
+  width: 450px;
+  height: 450px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.content h2{
+  font-size: 70px;
+  color: #04045E;
+}
+.content h4{
+  font-size: 20px;
+  font-weight: 500;
+  color: #090072;
+}
+.content div{
+  margin-top: 150px;
+}
+button{
+  padding: 10px 30px;
+  margin-top: 20px;
+  border-radius: 5px;
+  position: relative;
+  outline: 0;
+  border: 1px solid rgb(0, 0, 0);
+  cursor: pointer;
+  background-color: rgba(48, 3, 3, 0);
+  
+}
+button:after {
+  content: "";
+  background-color: #f5ee84;
+  width: 100%;
+  z-index: -1;
+  position: absolute;
+  border-radius: 5px;
+  height: 100%;
+  top: 5px;
+  left: 5px;
+  transition: 0.2s;
+}
+button:hover:after {
+  top: 0px;
+  left: 0px;
+}
+/* header and nav ends */
+/* about starts */
+.about{
+  padding: 150px 100px;
+}
+.about h2{
+  font-size: 70px;
+  color: #f5ee84;
+}
+.about p{
+  color: #090072;
+}
+.container1{
+  width: 800px;
+}
+.container2{
+  padding-top: 20px;
+  margin-left: 200px;
+  margin-top: 80px;
+}
+.container2 p{
+  width: 800px;
+  padding-bottom: 10px;
+}
+.container2 li{
+  font-weight: 700;
+  color: #07045B;
+  padding-bottom: 10px;
+}
+/* about ends */
+/* work starts */
+.work{
+  padding: 150px 100px;
+}
+ .work-container{
+  display: flex;
+  gap: 1.5rem;
+  justify-content: space-between;
+  color: #04045E;
+ }
+ .cases .image{
+  width: 600px;
+  height: 400px;
+  object-fit: cover;
+ }
+ i{
+  display: block;
+ }
+ .work h2{
+  font-size: 70px;
+  color: #f5ee84;
+ }
+ .work p{
+  width: 800px;
+  padding-bottom: 70px;
+  color: #04045E;
+ }
+ .cases {
+  width: 600px;
+  height: auto;
+ }
+ .cases p{
+  width: 600px;
+  margin-top: 10px;
+ }
+ .cases h4{
+  margin-top: 10px;
+ }
+/* work ends */
+@media (max-width: 768px) {
+  nav{
+    display: block;
+    padding: 10px 10px;
+  }
+nav ul a{
+  font-size: 24px;
+}
+.hero nav h4{
+  font-size: 24px;
+  display: inline;
+}
+.tab{
+  display: block;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.menuu{
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+.icons{
+  margin-bottom: 60px;
+  left: 350px;
+  bottom: 80px;
+}
+/* body */
+.content{
+  display: block;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 10px;
+  margin-bottom: 30px;
+  margin-top: 230px;
+  position: relative;
+}
+.profile{
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-top: 80px;
+  position: absolute;
+  bottom: 200px;
+  left: 200px;
+}
+.textt{
+  text-align: center;
+}
+.content h2{
+  font-size: 25px;
+}
+.content h4{
+  font-size: 20px;
+  font-weight: 500;
+}
+/* about */
+.about{
+  padding: 10px 10px;
+}
+.about h2{
+  font-size: 40px;
+  text-align: center;
+  text-decoration: underline;
+  margin-top: 45px;
+}
+.container1{
+  width: 90%;
+}
+.container2{
+  padding-top: 0;
+  margin-left: 0px;
+  margin-top: 80px;
+}
+.container2 p{
+  width: 100%;
+  padding-bottom: 5px;
+}
+.container2 li{
+  font-weight: 700;
+  color: #07045B;
+  padding-bottom: 10px;
+}
+/* work */
+.work-container{
+  display: block;
+ }
+  .work{
+    padding: 10px 10px;
+    margin-top: 10px;
+  }
+   .cases .image{
+    width: 100%;
+    height: 100%;
+   }
+   i{
+    display: block;
+   }
+   .work h2{
+    font-size: 40px;
+    text-align: center;
+    text-decoration: underline;
+   }
+   .work p{
+    width: 100%;
+   }
+   .cases {
+    width: 100%;
+    height: auto;
+    margin-top: -30px;
+   }
+   .cases p{
+    width: 100%;
+    margin-top: 10px;
+   }
+}
